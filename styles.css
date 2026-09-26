@@ -27,12 +27,13 @@ body {
 }
 
 .light {
-  --clr-bg: #fcfcfc;
-  --clr-bg-alt: #fff;
-  --clr-fg: #555;
-  --clr-fg-alt: #444;
-  --clr-primary: #2978b5;
-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  --clr-bg: #080c09;        /* Same deep rich black */
+  --clr-bg-alt: #111a13;    /* Same dark green-black for cards */
+  --clr-fg: #9ca3af;        /* Same soft gray text */
+  --clr-fg-alt: #f3f4f6;    /* Same crisp off-white for headers */
+  --clr-primary: #10b981;   /* Same vibrant emerald green */
+  --shadow: rgba(0, 0, 0, 0.7) 0px 10px 36px 0px,
+    rgba(16, 185, 129, 0.1) 0px 0px 0px 1px;
 }
 
 .dark {
