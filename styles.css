@@ -36,13 +36,13 @@ body {
 }
 
 .dark {
-  --clr-bg: #23283e;
-  --clr-bg-alt: #2a2f4c;
-  --clr-fg: #bdbddd;
-  --clr-fg-alt: #cdcdff;
-  --clr-primary: #90a0d9;
-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --clr-bg: #080c09;        /* Deep, rich black with a tiny hint of forest tint */
+  --clr-bg-alt: #111a13;    /* Slightly lighter dark green-black for your project cards */
+  --clr-fg: #9ca3af;        /* Clean soft gray for paragraph text (easy to read) */
+  --clr-fg-alt: #f3f4f6;    /* Crisp off-white for headers and titles */
+  --clr-primary: #10b981;   /* Vibrant dark/emerald green for your buttons, links, and name */
+  --shadow: rgba(0, 0, 0, 0.7) 0px 10px 36px 0px,
+    rgba(16, 185, 129, 0.1) 0px 0px 0px 1px; /* Subtle green glow border effect */
 }
 
 ::-moz-selection {
