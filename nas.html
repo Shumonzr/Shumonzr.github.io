@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Lab Server & NAS Build - Shumon Rahman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container" style="padding: 4rem 0;">
+        <!-- Back Link -->
+        <a href="index.html" class="link">&larr; Back to Home</a>
+
+        <!-- Title & Subtitle -->
+        <header style="margin-top: 2rem;">
+            <h1>Home Lab Server & NAS Build</h1>
+            <p class="subtitle" style="color: var(--clr-primary);">Assembling a reliable, rack-mounted virtualization and network storage node</p>
+        </header>
+
+        <hr style="border: 0; border-top: 1px solid var(--clr-bg-alt); margin: 2rem 0;">
+
+        <!-- Case Study Sections -->
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Overview & Motivation</h2>
+            <p>I needed a centralized, fault-tolerant infrastructure setup to host local development containers, handle automated media backups, and manage network-attached storage (NAS). The goal was to build a low-power, rack-mountable server capable of running 24/7 with high data integrity.</p>
+        </section>
+
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Hardware Specs</h2>
+            <ul style="list-style-type: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; color: var(--clr-fg);">
+                <li><strong>Chassis:</strong> 2U Rackmount Server Case</li>
+                <li><strong>Motherboard:</strong> Server-grade board with IPMI support</li>
+                <li><strong>CPU:</strong> Power-efficient multi-core processor with ECC memory support</li>
+                <li><strong>Storage:</strong> Enterprise-grade HDD array configured for data redundancy</li>
+                <li><strong>Networking:</strong> Dual Gigabit Ethernet / 2.5GbE links</li>
+            </ul>
+        </section>
+
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Architecture & Configuration</h2>
+            <p>To ensure maximum uptime and security, I configured the server layer from scratch:</p>
+            <ul style="list-style-type: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; color: var(--clr-fg);">
+                <li><strong>OS & Virtualization:</strong> Deployed a headless Linux/TrueNAS core environment for minimal overhead and robust container orchestration.</li>
+                <li><strong>Storage Pooling:</strong> Implemented a ZFS file system configuration to ensure checksum verification and protection against silent data corruption.</li>
+                <li><strong>Automation:</strong> Set up automated off-site cloud backups, containerized monitoring tools (Prometheus/Grafana), and local network shares (SMB/NFS).</li>
+            </ul>
+        </section>
+
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Challenges & Takeaways</h2>
+            <p>Balancing acoustic noise levels with enterprise cooling requirements in a 2U rack layout presented an interesting thermal challenge, which I resolved by tuning PWM fan curves for optimal static pressure. This project deeply expanded my practical experience with Linux system administration, network topology, ZFS array management, and hardware diagnostics.</p>
+        </section>
+    </main>
+
+</body>
+</html>
