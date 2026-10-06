@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom System Monitoring Dashboard - Shumon Rahman</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="container" style="padding: 4rem 0;">
+        <!-- Back Link -->
+        <a href="index.html" class="link">&larr; Back to Home</a>
+
+        <!-- Title & Subtitle -->
+        <header style="margin-top: 2rem;">
+            <h1>Custom System Monitoring Dashboard</h1>
+            <p class="subtitle" style="color: var(--clr-primary);">Tracking real-time hardware trends and performance data with Python and Flask</p>
+        </header>
+
+        <hr style="border: 0; border-top: 1px solid var(--clr-bg-alt); margin: 2rem 0;">
+
+        <!-- Case Study Sections -->
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Overview & Motivation</h2>
+            <p>While managing my various workstations and test benches, I wanted a lightweight, self-hosted utility to keep an eye on hardware metrics without bloating system resources. Commercial monitoring suites often come with telemetry, heavy background services, or cluttered user interfaces. I decided to build my own custom solution tailored specifically to track real-time trends cleanly and efficiently.</p>
+        </section>
+
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Tech Stack & Architecture</h2>
+            <ul style="list-style-type: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; color: var(--clr-fg);">
+                <li><strong>Backend:</strong> Python with Flask lightweight web framework for routing and API endpoints.</li>
+                <li><strong>Hardware Interfacing:</strong> Utilized system libraries to poll CPU usage, memory allocation, and disk metrics.</li>
+                <li><strong>Database:</strong> SQLite lightweight database to store historical performance logs over time.</li>
+                <li><strong>Frontend UI:</strong> Responsive, dark-themed dashboard styled to match my portfolio aesthetic with dynamic charts.</li>
+            </ul>
+        </section>
+
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Key Features & Implementation</h2>
+            <p>To make the dashboard functional and reliable for daily use, I focused on a few core capabilities:</p>
+            <ul style="list-style-type: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; color: var(--clr-fg);">
+                <li><strong>Real-Time Polling:</strong> Asynchronous data fetching to update system vitals smoothly without page reloads.</li>
+                <li><strong>Historical Logging:</strong> Periodic background writes to SQLite allowing trend analysis over hourly and daily intervals.</li>
+                <li><strong>Minimal Footprint:</strong> Designed to run continuously with negligible CPU and memory overhead on the host machine.</li>
+            </ul>
+        </section>
+
+        <section class="section" style="margin-top: 2rem;">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Takeaways</h2>
+            <p>Building this dashboard bridged my interests in software development and hardware diagnostics. It gave me deeper insight into full-stack data flow, lightweight API design, and effective data visualization for system administration.</p>
+        </section>
+    </main>
+
+</body>
+</html>
