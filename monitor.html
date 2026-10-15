@@ -17,7 +17,7 @@
         <!-- Title & Subtitle -->
         <header style="margin-top: 2rem;">
             <h1>Custom Metrics Monitoring App</h1>
-            <p class="subtitle" style="color: var(--clr-primary);">Tracking real-time hardware trends and performance data with Python and Flask</p>
+            <p class="subtitle" style="color: var(--clr-primary);">A Windows dashboard for real time hardware stats and trends using C# and WPF</p>
         </header>
 
         <hr style="border: 0; border-top: 1px solid var(--clr-bg-alt); margin: 2rem 0;">
@@ -32,8 +32,8 @@
             <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Requirements</h2>
             <ul style="list-style-type: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; color: var(--clr-fg);">
                 <li><strong>Sensing:</strong> Of course, if it can't measure CPU and GPU temps, the whole app is unnecessary.</li>
-                <li><strong>Logging:</strong> If I can't track the data overtime, I'll be oblivous to any abnorval behavior.</li>
-                <li><strong>Warning:</strong> Recieving a warning if temps get too high will be a nice way to not fry my components.</li>
+                <li><strong>Logging:</strong> If I can't track the data overtime, I'll be oblivious to any abnorval behavior.</li>
+                <li><strong>Automation:</strong> Having it run automatically saves me from forgetting to use it.</li>
             </ul>
         </section>
 
@@ -41,9 +41,9 @@
             <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Implementation</h2>
             <p>To make the dashboard functional and reliable for daily use, I focused on a few core capabilities:</p>
             <ul style="list-style-type: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; color: var(--clr-fg);">
-                <li><strong>Real-Time Polling:</strong> Asynchronous data fetching to update system vitals smoothly without page reloads.</li>
-                <li><strong>Historical Logging:</strong> Periodic background writes to SQLite allowing trend analysis over hourly and daily intervals.</li>
-                <li><strong>Minimal Footprint:</strong> Designed to run continuously with negligible CPU and memory overhead on the host machine.</li>
+                <li><strong>Live Dashboard</strong> Cards update frequently with CPU/GPU temps, disk usage, and network speed.</li>
+                <li><strong>Interactive Graphs</strong> Graphs timelines can be changed so you can view current or past trends.</li>
+                <li><strong>Minimal Footprint:</strong> Has low CPU and RAM (<1% of both) overhead so running it is not wasteful of resources.</li>
             </ul>
         </section>
 
