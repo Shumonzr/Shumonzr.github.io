@@ -40,18 +40,17 @@
         </section>
 
         <section class="section" style="margin-top: 2rem;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Architecture & Configuration</h2>
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Configuration</h2>
             <p>To ensure maximum uptime and security, I configured the server layer from scratch:</p>
             <ul style="list-style-type: disc; padding-left: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem; color: var(--clr-fg);">
-                <li><strong>OS & Virtualization:</strong> Deployed a headless Linux/TrueNAS core environment for minimal overhead and robust container orchestration.</li>
-                <li><strong>Storage Pooling:</strong> Implemented a ZFS file system configuration to ensure checksum verification and protection against silent data corruption.</li>
-                <li><strong>Automation:</strong> Set up automated off-site cloud backups, containerized monitoring tools (Prometheus/Grafana), and local network shares (SMB/NFS).</li>
+                <li><strong>Operating System</strong> Used TrueNAS for ease of use and headless access.</li>
+                <li><strong>Storage Pooling:</strong> Set up Raid 1 across drives to ensure data safety.</li>
             </ul>
         </section>
 
         <section class="section" style="margin-top: 2rem;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Challenges & Takeaways</h2>
-            <p>Balancing acoustic noise levels with enterprise cooling requirements in a 2U rack layout presented an interesting thermal challenge, which I resolved by tuning PWM fan curves for optimal static pressure. This project deeply expanded my practical experience with Linux system administration, network topology, ZFS array management, and hardware diagnostics.</p>
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Conclusion</h2>
+            <p> Setting up a new operating system for the first proved more difficult than expected. Figuring out the proper dimensions and materials to print was also difficult, but overall I enjoyed the process.</p>
         </section>
     </main>
 
